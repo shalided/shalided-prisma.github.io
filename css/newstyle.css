@@ -721,7 +721,7 @@ body {
   justify-content: center;
 }
 .footer-link:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
 .mobile-menu {
   height: 100vh;
