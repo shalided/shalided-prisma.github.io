@@ -1035,6 +1035,15 @@ body {
   }
   .features__linker {
     top: 0px;}
+  .app__linker {
+    top: -100px;
+  }
+  .mvp__linker {
+    top: -100px;
+  }
+  .web__linker {
+    top: -100px;
+  }
   .web__linker {
       top: -300px;
   }
