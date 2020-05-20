@@ -1034,18 +1034,19 @@ body {
     transform: rotate(200deg);
   }
   .features__linker {
-    top: -200px;}
+    top: 180px;
+  }
   .app__linker {
-    top: -100px;
+    top: -70px;
   }
   .mvp__linker {
-    top: -300px;
+    top: -100px;
   }
   .web__linker {
-    top: -300px;
+    top: -150px;
   }
   .faq__linker {
-    top: 150px;
+    top: -50px;
   }
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
