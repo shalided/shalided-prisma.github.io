@@ -1034,12 +1034,12 @@ body {
     transform: rotate(200deg);
   }
   .features__linker {
-    top: 0px;}
+    top: -200px;}
   .app__linker {
     top: -100px;
   }
   .mvp__linker {
-    top: -100px;
+    top: -300px;
   }
   .web__linker {
     top: -100px;
