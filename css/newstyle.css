@@ -133,6 +133,9 @@ body {
   font-family: 'Gilroy M';
   text-decoration: none;
 }
+.header-nav__link:hover {
+  opacity: 0.8;
+}
 .header-nav__link:last-child {
   margin-right: 0;
 }
@@ -151,6 +154,9 @@ body {
   text-decoration: none;
   margin-left: 8%;
   font-family: 'Gilroy B';
+}
+.header-btn:hover {
+  opacity: 0.8;
 }
 .main {
   background: #000;
@@ -204,6 +210,42 @@ body {
   font-size: 26px;
   font-family: 'Gilroy M';
   color: #fff;
+}
+.features__linker {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 300px;
+}
+.demo__linker {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: -70px;
+}
+.faq__linker {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: -200px;
+}
+.app__linker {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: -200px;
+}
+.mvp__linker {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: -200px;
+}
+.web__linker {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: -200px;
 }
 .prism {
   padding-top: 500px;
@@ -631,8 +673,11 @@ body {
   background: transparent;
   outline: none !important;
 }
+.contact-form__btn:hover {
+  opacity: 0.8;
+}
 .footer {
-  height: 228px;
+  height: 200px;
   background: #000;
   display: -webkit-flex;
   display: -ms-flex;
@@ -665,6 +710,8 @@ body {
   margin-right: 240px;
   height: 61px;
   width: 61px;
+  position: relative;
+  top: -30px;
   background: #fff;
   border-radius: 50%;
   display: -webkit-flex;
@@ -957,18 +1004,18 @@ body {
   }
   .app__link {
     right: -280px;
-    top: -150px;
-    font-size: 40px;
+    top: -142px;
+    font-size: 32px;
   }
   .mvp__link {
-    right: -320px;
-    top: -105px;
-    font-size: 40px;
+    right: -345px;
+    top: -100px;
+    font-size: 32px;
   }
   .web__link {
-    right: -375px;
-    top: -60px;
-    font-size: 40px;
+    right: -407px;
+    top: -55px;
+    font-size: 32px;
   }
   .app-screen {
     position: absolute;
@@ -982,6 +1029,11 @@ body {
     top: -580px;
     right: -500px;
     transform: rotate(200deg);
+  }
+  .features__linker {
+    top: 0px;}
+  .web__linker {
+      top: -300px;
   }
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -1162,6 +1214,18 @@ body {
     top: -170px;
     left: -200px;
   }
+  .features__linker {
+    top: -100px;
+  }
+  .app__linker {
+    top: -360px;
+  }
+  .mvp__linker {
+    top: -360px;
+  }
+  .web__linker {
+    top: -520px;
+  }
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (max-width: 992px) {
@@ -1294,18 +1358,18 @@ body {
   .app-screen {
     width: 400px;
     top: 80px;
-    right: -40px;
+    right: -57px;
   }
   .mvp-screen {
     width: 550px;
     top: 0px;
-    left: -100px;
+    left: -125px;
   }
   .web-screen {
     position: absolute;
     width: 480px;
     top: 25px;
-    right: -90px;
+    right: -140px;
   }
   .about-content_2 {
     width: 360px;
@@ -1374,6 +1438,24 @@ body {
   }
   .footer-link {
     margin-right: 0;
+  }
+  .features__linker {
+    top: 180px;
+  }
+  .app__linker {
+    top: -200px;
+  }
+  .mvp__linker {
+    top: -200px;
+  }
+  .web__linker {
+    top: -320px;
+  }
+  .demo__linker {
+    top: -170px;
+  }
+  .faq__linker {
+    top: 0px;
   }
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -1645,13 +1727,13 @@ body {
     position: absolute;
     width: 450px;
     top: 350px;
-    left: -20px;
+    left: -50px;
   }
   .web-screen {
     position: absolute;
     width: 400px;
     top: 300px;
-    left: 0px;
+    left: -15px;
   }
   .mvp-silver {
     display: none;
@@ -1781,6 +1863,24 @@ body {
   }
   .footer .container {
     align-items: flex-start;
+  }
+  .features__linker {
+    top: 200px;
+  }
+  .demo__linker {
+    top: -70px;
+  }
+  .faq__linker {
+    top: 130px;
+  }
+  .app__linker {
+    top: 0px;
+  }
+  .mvp__linker {
+    top: 0px;
+  }
+  .web__linker {
+    top: -50px;
   }
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

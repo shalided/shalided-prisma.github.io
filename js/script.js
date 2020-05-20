@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function() {
   $('.header-nav__link, .mobile-menu__link, .mobile-menu__btn, .header-btn, .app__link, .mvp__link, .web__link').on('click', function(event) {
     event.preventDefault();
     var id = $(this).attr('href'),
-    top = $(id).offset().top - $('.header').height()-200;
+    top = $(id).offset().top - $('.header').height();
     $('body,html').animate({scrollTop: top}, 1000);
   });
 
