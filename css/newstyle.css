@@ -646,7 +646,7 @@ body {
   border: 1px solid #DBD7D4;
   border-radius: 5px;
   color: #000;
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Gilroy R';
   padding-left: 24px;
 }
@@ -658,7 +658,7 @@ body {
   padding: 23px;
   border: 1px solid #DBD7D4;
   color: #000;
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Gilroy R';
   margin-top: 12px;
   margin-bottom: 30px;
@@ -761,7 +761,7 @@ body {
   font-size: 28px;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .mobile-menu__btn {
   width: 343px;
@@ -788,6 +788,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -100px;
 }
 .df {
   display: flex;
@@ -2014,6 +2015,31 @@ body {
 @media (max-width: 325px) {
   .about-background_mobile {
     top: 100px;
+  }
+  .img-prism {
+    width: 500px;
+    margin-left: -27px;
+  }
+  .app-screen {
+    top: 400px;
+  }
+  .lines {
+    top: 0px;
+  }
+  .lines-mob {
+    top: -320px;
+  }
+  .features__linker {
+    top: 280px;
+  }
+  .about {
+    padding-top: 0px;
+  }
+  .demo__linker {
+    top: -20px;
+  }
+  .faq__linker {
+    top: 230px;
   }
 }
 @media (max-height: 501px) {
