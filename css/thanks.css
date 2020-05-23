@@ -226,14 +226,16 @@ body {
 @media (max-width: 380px) {
   .yell {
     width: 100px;
+    top: 30px;
   }
   .mob-blue {
     width: 300px;
-    bottom: 50px;
+    bottom: -40px;
+    right: -180px;
   }
   .mob-red {
     width: 120px;
-    bottom: 150px;
+    bottom: 80px;
   }
   .subtitle {
     font-size: 16px;
