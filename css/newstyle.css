@@ -1928,6 +1928,9 @@ body {
   .footer .container {
     align-items: flex-start;
   }
+  .footer-link {
+    top: 0px;
+  }
   .features__linker {
     top: 200px;
   }
