@@ -1,7 +1,10 @@
 <?php
 
 require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
+
+require_once('phpmailer/class.smtp.php');
+
+$mail = new PHPMailer(true);
 $mail->CharSet = 'utf-8';
 
 $name = $_POST['user__name'];
