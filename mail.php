@@ -1,10 +1,9 @@
 <?php
 
-require_once('phpmailer/PHPMailerAutoload.php');
+require 'phpmailer/PHPMailerAutoload.php';
 
-require_once('phpmailer/class.smtp.php');
 
-$mail = new PHPMailer(true);
+$mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
 $name = $_POST['user__name'];
@@ -14,14 +13,14 @@ $message = $_POST['user__message'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.sendgrid.net';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'prismabox19@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '347257kry'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'apikey'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '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'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('prismabox19@mail.ru'); // от кого будет уходить письмо?
+$mail->setFrom('its.sakovich@gmail.com'); // от кого будет уходить письмо?
 $mail->addAddress('hi@prisma.la');     // Кому будет уходить письмо
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -32,11 +31,12 @@ $mail->addAddress('hi@prisma.la');     // Кому будет уходить п�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Landing input';
-$mail->Body    = '' .$name . '<br>' .$message. '<br>' .$email;
+$mail->Body    = 'Name: ' .$name . '<br>Message: ' .$message. '<br>Mail: ' .$email;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
     echo 'Error';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
     header('location: thank-you.html');
 }
